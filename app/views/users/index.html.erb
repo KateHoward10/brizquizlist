@@ -12,6 +12,11 @@
             <%= " - " if user.username.present? %>
             <%= mail_to user.email %>
             <small class="small-details">Member since: <%= format_date(user.created_at) %></small>
+            <% if user.confirmed_at %>
+              <small class="small-details">
+                <%= fa_icon "check" %>
+                Email confirmed: <%= format_date(user.confirmed_at) %></small>
+            <% end %>
             <% if user.quizzes.any? %>
               <% user.quizzes.each do |quiz| %>
                 <%= link_to quiz do %>
