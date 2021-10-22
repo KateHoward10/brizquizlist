@@ -11,7 +11,7 @@ class QuizzesController < ApplicationController
   end
 
   def my_quizzes
-    @quizzes = current_user.try(:admin?) ? Quiz.all : current_user.quizzes
+    @quizzes = current_user.try(:admin?) ? Quiz.all.sort_by { |q| q.venue.gsub("The ", "").upcase } : current_user.quizzes
   end
 
   def calendar
