@@ -17,7 +17,7 @@
                 <%= fa_icon "check" %>
                 Email confirmed: <%= format_date(user.confirmed_at) %></small>
             <% end %>
-            <% if user.quizzes.any? %>
+            <% if !user.admin && user.quizzes.any? %>
               <% user.quizzes.each do |quiz| %>
                 <%= link_to quiz do %>
                   <small><%= fa_icon "home" %><%= formatName(quiz.venue) %></small>
