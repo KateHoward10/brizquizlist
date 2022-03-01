@@ -1,4 +1,4 @@
-function setFavourite() {
+global.setFavourite = function() {
   const favouriteButton = document.getElementById('favourite_button');
   const number = document.querySelector('.favourite-number');
 
@@ -12,7 +12,7 @@ function setFavourite() {
   }
 }
 
-function removeElement() {
+global.removeElement = function() {
   const removeButtons = document.querySelectorAll('.remove-button');
 
   if (removeButtons) {

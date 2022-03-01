@@ -15,4 +15,9 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-console.log('Hello World from Webpacker')
+import "../events";
+import "../favourites";
+import "../form";
+import "../map";
+import "../registration";
+import "../sort";

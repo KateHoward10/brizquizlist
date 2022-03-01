@@ -1,4 +1,4 @@
-function passwordFeedback() {
+global.passwordFeedback = function() {
   const passwordInput = document.getElementById('user_password');
   const passwordConfirmation = document.getElementById('user_password_confirmation');
   const confirmIcons = document.querySelectorAll('.confirm-icon');

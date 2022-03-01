@@ -1,4 +1,4 @@
-function initDistanceForm() {
+global.initDistanceForm = function() {
   let formOpen = false;
   const select = document.getElementById('sort_select');
   const form = document.getElementById('postcode_form');

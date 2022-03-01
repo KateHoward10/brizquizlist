@@ -1,4 +1,4 @@
-function setDates() {
+global.setDates = function() {
   const dateContainer = document.getElementById('date_container');
 
   function removeDate(e) {
@@ -8,7 +8,7 @@ function setDates() {
   dateContainer.querySelectorAll('.remove-date').forEach(button => button.addEventListener('ajax:success', removeDate));
 }
 
-function setAttending() {
+global.setAttending = function() {
   document.querySelectorAll('.attending-toggle').forEach(toggle => toggle.addEventListener('ajax:success', () => {
     const isAttending = toggle.firstElementChild.classList.contains('grey');
     toggle.innerHTML = isAttending ? '<i class="fa fa-check green"></i><span>Attending</span>' : '<i class="fa fa-check grey"></i><span>Attend</span>';

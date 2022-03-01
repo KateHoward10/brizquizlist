@@ -1,4 +1,4 @@
-function displayBigMap(quizzes) {
+global.displayBigMap = function(quizzes) {
   const container = document.getElementById('big-map-container');
 
   const initialCoords = new google.maps.LatLng(51.45946, -2.5907347);

@@ -1,4 +1,4 @@
-function initForm() {
+global.initForm = function() {
   const venueInput = document.getElementById('quiz_venue');
   const postcodeInput = document.getElementById('quiz_postcode');
   const addressInput = document.getElementById('quiz_address');
