@@ -15,6 +15,10 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
+require("@rails/ujs").start();
+require("@rails/activestorage").start();
+require("turbolinks").start();
+
 import "../events";
 import "../favourites";
 import "../form";

@@ -951,6 +951,18 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@rails/activestorage@^7.0.2-2":
+  version "7.0.2-2"
+  resolved "https://registry.yarnpkg.com/@rails/activestorage/-/activestorage-7.0.2-2.tgz#3b9cb1f0508e5d72d96e9f9fce8ebb74b77c7bd8"
+  integrity sha512-ry8vuHIFE4izF2jttkIPCN6YN607rCekWZfTitO6WbUUWfnhrMQ7XEPcDobujebBBYEylSUVVopD2LH1Q30jmQ==
+  dependencies:
+    spark-md5 "^3.0.1"
+
+"@rails/ujs@^7.0.2-2":
+  version "7.0.2-2"
+  resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-7.0.2-2.tgz#9f2f114f4777627034be541151a1240ebe585199"
+  integrity sha512-2M+stexFdUwVXMo4sborFkGEI7A7qEl8iIZX9oqW/JOjEyl6jpjpKAtPCAvKrXQAduX8lBQKHj/eTQKqONVB0Q==
+
 "@rails/webpacker@4.2.2":
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/@rails/webpacker/-/webpacker-4.2.2.tgz#b9dd3235fdf4d0badbda8e33f6ebee742a9f3abb"
@@ -6952,6 +6964,11 @@ source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.1:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
+spark-md5@^3.0.1:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/spark-md5/-/spark-md5-3.0.2.tgz#7952c4a30784347abcee73268e473b9c0167e3fc"
+  integrity sha512-wcFzz9cDfbuqe0FZzfi2or1sgyIrsDwmPwfZC4hiNidPdPINjeUwNfv5kldczoEAcjl9Y1L3SM7Uz2PUEQzxQw==
+
 spdx-correct@^3.0.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/spdx-correct/-/spdx-correct-3.1.1.tgz#dece81ac9c1e6713e5f7d1b6f17d468fa53d89a9"
@@ -7437,6 +7454,11 @@ tunnel-agent@^0.6.0:
   integrity sha1-J6XeoGs2sEoKmWZ3SykIaPD8QP0=
   dependencies:
     safe-buffer "^5.0.1"
+
+turbolinks@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/turbolinks/-/turbolinks-5.2.0.tgz#e6877a55ea5c1cb3bb225f0a4ae303d6d32ff77c"
+  integrity sha512-pMiez3tyBo6uRHFNNZoYMmrES/IaGgMhQQM+VFF36keryjb5ms0XkVpmKHkfW/4Vy96qiGW3K9bz0tF5sK9bBw==
 
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
