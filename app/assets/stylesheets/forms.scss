@@ -176,6 +176,7 @@ input[type=checkbox] {
   flex-direction: row;
   height: 2rem;
   width: 100%;
+  min-width: 10rem;
   input:not(#quiz_price) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
