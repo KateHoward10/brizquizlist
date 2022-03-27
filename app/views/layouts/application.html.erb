@@ -8,6 +8,8 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%= analytics_init if GoogleAnalytics.valid_tracker? %>
+
     <meta property="og:type" content="website">
     <meta property="og:url" content="<%= request.original_url %>">
     <meta property="og:title" content="<%= title %>">
