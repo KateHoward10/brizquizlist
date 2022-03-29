@@ -2,10 +2,15 @@
   <%= link_to quiz, class: "quiz-link box-shadow" do %>
     <%= render "icon_container", hue: quiz.hue, icon: "home" %>
     <div class="quiz-overview">
-      <span><%= formatName(quiz.venue) %></span>
-      <span class="quiz-info">
-        <%= quiz.day.slice(0,3) %><%= quiz.time ? ", #{quiz.time}" : "" %>
-      </span>
+      <div class="quiz-details">
+        <span><%= formatName(quiz.venue) %></span>
+        <span class="quiz-info">
+          <%= quiz.day.slice(0,3) %><%= quiz.time ? ", #{quiz.time}" : "" %>
+        </span>
+      </div>
+      <% if quiz.status == 'active' %>
+        <span class="quiz-info active-label"><%= fa_icon "check" %>Active</span>
+      <% end %>
     </div>
   <% end %>
 </li>
