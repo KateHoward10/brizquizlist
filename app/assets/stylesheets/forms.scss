@@ -130,7 +130,7 @@ input[type=checkbox] {
   small {
     max-width: $field_width;
     display: block;
-    font-size: 0.75rem;
+    font-size: 0.625rem;
   }
   a {
     text-align: center;
@@ -239,7 +239,7 @@ input[type=checkbox] {
 
 label {
   display: block;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 
 @media screen and (min-width: $medium) {
