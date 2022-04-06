@@ -131,6 +131,7 @@ input[type=checkbox] {
     max-width: $field_width;
     display: block;
     font-size: 0.625rem;
+    margin: 1px 0;
   }
   a {
     text-align: center;
@@ -240,6 +241,7 @@ input[type=checkbox] {
 label {
   display: block;
   font-size: 0.75rem;
+  margin-bottom: 1px;
 }
 
 @media screen and (min-width: $medium) {
