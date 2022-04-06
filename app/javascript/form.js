@@ -6,6 +6,7 @@ global.initForm = function() {
   const lngInput = document.getElementById('quiz_longitude');
   
   if (latInput.value && lngInput.value) {
+    displayCoordinateInputs();
     const coords = new google.maps.LatLng(latInput.value, lngInput.value);
   
     const mapOptions = {
@@ -72,6 +73,11 @@ global.initForm = function() {
     newlng = Math.round(latlng.lng() * 1000000) / 1000000;
     latInput.value = newlat;
     lngInput.value = newlng;
+    displayCoordinateInputs();
+  }
+
+  function displayCoordinateInputs() {
+    document.querySelector(".hidden-field").classList.remove("hidden-field");
   }
 
   document.getElementById('geocode_button').addEventListener('click', getCoordsFromPostcode);

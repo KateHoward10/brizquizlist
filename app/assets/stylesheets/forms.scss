@@ -242,6 +242,10 @@ label {
   font-size: 0.875rem;
 }
 
+.hidden-field {
+  display: none;
+}
+
 @media screen and (min-width: $medium) {
   .field {
     width: $field_width;
