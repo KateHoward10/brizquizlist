@@ -3,9 +3,9 @@
     <%= render "icon_container", hue: quiz.hue, icon: "home" %>
     <div class="quiz-overview">
       <div class="quiz-details">
-        <span><%= formatName(quiz.venue) %></span>
+        <span class="quiz-name"><%= formatName(quiz.venue) %></span>
         <span class="quiz-info">
-          <%= quiz.day.slice(0,3) %><%= quiz.time ? ", #{quiz.time}" : "" %>
+          <%= fa_icon "clock-o" %><%= quiz.day.slice(0,3) %><%= quiz.time ? ", #{quiz.time}" : "" %>
         </span>
       </div>
       <% if quiz.status == 'active' %>
